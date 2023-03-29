@@ -1,0 +1,183 @@
+$font-family_1: 'Lato', sans-serif;
+$background-color_1: #082B59;
+
+body {
+	background-color: $background-color_1;
+	margin: 0;
+	padding: 0;
+	font-family: $font-family_1;
+	line-height: 2;
+}
+$font-family_1: 'Poppins', sans-serif;
+
+/* make images flexible */
+h1 {
+	font-family: $font-family_1;
+	font-size: 2rem;
+	margin-bottom: 0;
+}
+h2 {
+	font-family: $font-family_1;
+}
+h3 {
+	font-family: $font-family_1;
+}
+img {
+	max-width: 100%;}
+    $color_1: #59331d;
+
+    a {
+        color: $color_1;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+      
+/* navbar styling */
+header {
+	border-bottom: 10px solid #d98555;
+}
+ 
+nav {
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+}
+nav {
+	li {
+		margin: 0 1rem 1rem 1rem;
+		font-size: 1.3rem;
+	}
+}
+ 
+/* max width on the image in pixels */
+nav {
+	.logo {
+		img {
+			max-width: 150px;
+		}
+	}
+}
+
+/* flex basis on the image container, li */
+nav {
+	.logo {
+		flex-basis: 100%;
+		text-align: center;
+	}
+}
+$color_1: white;
+
+nav {
+	a {
+		color: $color_1;
+		text-decoration: none;
+		display: block;
+	}
+}
+$color_1: #d98555;
+
+/* establishes a white background */
+nav {
+	a {
+		&:hover {
+			color: $color_1;
+		}
+	}
+}
+.main-bkgd {
+	background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+	padding-bottom: 300px;
+}
+
+/* sits inside of the white background, centered */
+.main {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	justify-content: space-between;
+}
+article {
+	flex-basis: 73%;
+}
+$background-color_1: #59331d;
+
+figure {
+	margin: 3rem 0 0 0;
+	flex-basis: 25%;
+	background-color: $background-color_1;
+	border-radius: 10px;
+}
+$color_1: #f2f2f2;
+
+figure {
+	img {
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+}
+figcaption {
+	color: $color_1;
+	padding: 0.5rem;
+}
+$color_1: #f2f2f2;
+$background-color_1: #59331D;
+
+.button {
+	display: inline-block;
+	background-color: $background-color_1;
+	border-radius: 10px;
+	padding: 0.5rem 1rem;
+	margin: 0;
+	color: $color_1;
+	text-decoration: none;
+	border: 3px solid #59331d;
+}
+$color_1: #59331d;
+$color_2: #f2f2f2;
+$background-color_1: #f2f2f2;
+
+.button {
+	&:hover {
+		background-color: $background-color_1;
+		color: $color_1;
+	}
+}
+footer {
+	color: $color_2;
+	text-align: center;
+	border-top: 10px solid #d98555;
+}
+
+footer {
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+}
+$color_1: #f2f2f2;
+
+footer {
+	a {
+		color: $color_1;
+		font-size: 2rem;
+		display: block;
+		margin: 0 1rem 3rem 1rem;
+	}
+}
+
+@media only screen and(max-width: 600px) {
+	.main {
+		display: grid;
+		grid-template-columns: 1fr;
